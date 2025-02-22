@@ -1,0 +1,4 @@
+# This is a user-servicable config.
+opennms:
+  server: "example-vm-example005.ad.contoso.com"
+  port: 443

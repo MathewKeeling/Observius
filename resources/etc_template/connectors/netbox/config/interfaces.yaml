@@ -1,0 +1,13 @@
+interfaces:
+  - name: "custom_fields"
+    type: "object"
+    required: false
+    - name: "mode"
+      type: "string"
+      required: false
+    - name: "untagged_vlan"
+      type: "integer"
+      required: false
+    - name: "tagged_vlans"
+      type: "array"
+      required: false

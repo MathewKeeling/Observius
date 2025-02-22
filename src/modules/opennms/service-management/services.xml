@@ -1,0 +1,48 @@
+<!--
+    Author: Mathew Keeling
+    Email: mathew@kcltd.work
+    Date: 22 February 2025
+-->
+
+<!-- 
+    This file contains the list of services that OpenNMS can monitor.
+    This list is used to populate the "Service" drop-down list in the "Add Service"
+    dialog in the OpenNMS web UI. 
+-->
+
+<monitored-service service-name="ActiveMQ"/>
+<monitored-service service-name="DNS"/>
+<monitored-service service-name="DeviceConfig"/>
+<monitored-service service-name="Elasticsearch"/>
+<monitored-service service-name="FTP"/>
+<monitored-service service-name="HTTP"/>
+<monitored-service service-name="HTTP-8000"/>
+<monitored-service service-name="HTTP-8080"/>
+<monitored-service service-name="HTTPS"/>
+<monitored-service service-name="HypericAgent"/>
+<monitored-service service-name="HypericHQ"/>
+<monitored-service service-name="ICMP"/>
+<monitored-service service-name="IMAP"/>
+<monitored-service service-name="JMX-Cassandra"/>
+<monitored-service service-name="JMX-Cassandra-Newts"/>
+<monitored-service service-name="JMX-Kafka"/>
+<monitored-service service-name="JMX-Minion"/>
+<monitored-service service-name="Minion-Heartbeat"/>
+<monitored-service service-name="Minion-RPC"/>
+<monitored-service service-name="MS-RDP"/>
+<monitored-service service-name="MySQL"/>
+<monitored-service service-name="MinaSSH"/>
+<monitored-service service-name="NRPE"/>
+<monitored-service service-name="NRPE-NoSSL"/>
+<monitored-service service-name="OpenNMS-JVM"/>
+<monitored-service service-name="Oracle"/>
+<monitored-service service-name="POP3"/>
+<monitored-service service-name="Postgres"/>
+<monitored-service service-name="SMTP"/>
+<monitored-service service-name="SNMP"/>
+<monitored-service service-name="SSH"/>
+<monitored-service service-name="SQLServer"/>
+<monitored-service service-name="StrafePing"/>
+<monitored-service service-name="VMware-ManagedEntity"/>
+<monitored-service service-name="VMwareCim-HostSystem"/>
+<monitored-service service-name="Windows-Task-Scheduler"/>

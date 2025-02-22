@@ -1,0 +1,7 @@
+# File is sorted by model, not name.
+device_types:
+  - name: "Unknown Device"
+    manufacturer: "Unknown"
+    model: "Unknown"
+    slug: "unknown"
+    description: "Unknown device type."

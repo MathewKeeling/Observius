@@ -1,0 +1,8 @@
+# This is a user-servicable config.
+unifi_controller_sites:
+- example
+- example
+- example
+- example
+- example
+- example

@@ -1,0 +1,28 @@
+subnets:
+  ipv4:
+    enabled: true
+    networks:
+      - name: Endpoints_Default
+        cidr: 127.0.0.1/24
+        description: 
+      - name: Endpoints_Guest
+        cidr: 127.0.0.1/24
+        description: 
+      - name: Endpoints_Office
+        cidr: 127.0.0.1/24
+        description: 
+      - name: Servers_IPMI
+        cidr: 127.0.0.1/24
+        description: 
+      - name: Servers_LAN
+        cidr: 127.0.0.1/24
+        description: 
+      - name: Servers_WAN
+        cidr: 127.0.0.1/24
+        description: 
+  ipv6:
+    enabled: false
+    networks:
+      - name: subnet-1
+        cidr: 2001:db8:1234:1::/64
+        description: 

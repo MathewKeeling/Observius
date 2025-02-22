@@ -1,0 +1,21 @@
+# This file is user serviceable and is used to configure the Observius service.
+oni:
+  version: "2025.02.22"
+  settings:
+    program_name: "Observius"
+    log_level: "info"
+    log_file_path: "resources/logs/observius/observius.log"
+  database:
+    type: SQLite
+    file: "resources/db/observius.db"
+  features:
+    enable_feature_x: true
+    enable_feature_y: false
+  schedules:
+    daily_backup:
+      time: "02:00"
+      enabled: true
+    weekly_report:
+      day: "Sunday"
+      time: "03:00"
+      enabled: true

@@ -1,0 +1,5 @@
+ip_addresses:
+  ipv4_ranges:
+    - core_subnet: 
+      base_address: 127.0.0.1
+      subnet_mask: 24

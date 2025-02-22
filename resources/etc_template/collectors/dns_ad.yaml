@@ -1,0 +1,8 @@
+# This is a user-servicable config.
+dns_ad_hosts:
+  - name: "example-vm-domain_controller01.ad.contoso.com"
+    ip_address: "127.0.0.1"
+    subnet_mask: "255.255.255.0"
+  - name: "example-vm-domain_controller02.ad.contoso.com"
+    ip_address: "127.0.0.1"
+    subnet_mask: "255.255.255.0"

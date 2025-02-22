@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Python: ./modules/cloudflare/dynamic_dns.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "./modules/cloudflare/dynamic_dns.py",
+            "console": "integratedTerminal",
+            "args": "--path ./modules/cloudflare/dns_records/dynamic_dns/dns_records.csv",
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ]
+}

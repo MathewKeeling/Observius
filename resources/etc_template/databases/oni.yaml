@@ -1,0 +1,150 @@
+# Observius Network Inventory (ONI) Sources Database
+database:
+  metadata:
+    version: "v2025.02.22"
+    type: SQLite
+    name: "ONI"
+  settings:
+    file: "resources/db/oni.db"
+    journaling_mode: WAL
+    synchronous: NORMAL
+    timeout: 5000
+  schemas:
+    source_schema: &source_schema
+      columns:
+        - name: ipv4
+          type: TEXT
+        - name: ipv6
+          type: TEXT
+        - name: hostname
+          type: TEXT
+        - name: physical_address
+          type: TEXT
+        - name: interface_name
+          type: TEXT
+        - name: guid_hash
+          type: TEXT
+        - name: description
+          type: TEXT
+        - name: device_type
+          type: TEXT
+        - name: vendor
+          type: TEXT
+        - name: first_seen
+          type: INTEGER
+        - name: last_seen
+          type: INTEGER
+      unique_constraints:
+        - columns: ["physical_address", "ipv4"]
+  tables:
+    - name: interfaces
+      schema:
+        columns:
+          - name: source
+            type: TEXT
+          - name: ipv4
+            type: TEXT
+          - name: ipv6
+            type: TEXT
+          - name: interface_name
+            type: TEXT
+          - name: physical_address
+            type: TEXT
+          - name: guid_hash
+            type: TEXT
+          - name: ifDescription
+            type: TEXT
+          - name: ifType
+            type: TEXT
+          - name: ifSpeed
+            type: INTEGER
+          - name: ifPhysAddress
+            type: TEXT
+          - name: ifAdminStatus
+            type: TEXT
+          - name: ifOperStatus
+            type: TEXT
+          - name: ifLastChange
+            type: INTEGER
+    - name: master_inventory
+      schema:
+        columns:
+          - name: source
+            type: TEXT
+          - name: ipv4
+            type: TEXT
+          - name: ipv6
+            type: TEXT
+          - name: hostname
+            type: TEXT
+          - name: physical_address
+            type: TEXT
+          - name: interface_name
+            type: TEXT
+          - name: guid_hash
+            type: TEXT
+          - name: description
+            type: TEXT
+          - name: device_type
+            type: TEXT
+          - name: vendor
+            type: TEXT
+          - name: first_seen
+            type: INTEGER
+          - name: last_seen
+            type: INTEGER
+    - name: source_arp
+      schema: *source_schema
+    - name: source_dhcp_logs
+      schema: *source_schema
+    - name: source_dns_ad
+      schema:
+        columns:
+          - name: ipv4
+            type: TEXT
+          - name: ipv6
+            type: TEXT
+          - name: hostname
+            type: TEXT
+          - name: physical_address
+            type: TEXT
+          - name: interface_name
+            type: TEXT
+          - name: guid_hash
+            type: TEXT
+          - name: description
+            type: TEXT
+          - name: device_type
+            type: TEXT
+          - name: vendor
+            type: TEXT
+          - name: first_seen
+            type: INTEGER
+          - name: last_seen
+            type: INTEGER
+        unique_constraints:
+          - columns: ["ipv4", "hostname"]
+    - name: source_esxi
+      schema: *source_schema
+    - name: source_fs_network
+      schema: *source_schema
+    - name: source_hyperv
+      schema: *source_schema
+    - name: source_kvm
+      schema: *source_schema
+    - name: source_nmap
+      schema: *source_schema
+    - name: source_opennms
+      schema: *source_schema
+    - name: source_proxmox
+      schema: *source_schema
+    - name: source_snmp
+      schema: *source_schema
+    - name: source_unifi_controller_api
+      schema: *source_schema
+    - name: source_unifi_network_api
+      schema: *source_schema
+    - name: source_vcenter
+      schema: *source_schema
+    - name: source_xcpng
+      schema: *source_schema

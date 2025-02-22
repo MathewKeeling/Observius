@@ -1,0 +1,4 @@
+# This is a user-servicable config.
+unifi_network_api:
+  server: https://unifi.example.com
+  port: 443

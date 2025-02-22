@@ -1,0 +1,55 @@
+oni:
+  version: "1.0"
+  settings:
+    program_name: "ONI"
+    log_level: "info"
+    log_file_path: "resources/logs/oni/oni.log"
+  database:
+    type: SQLite
+    file: "resources/db/oni.db"
+    tables:
+      - name: "source_dns_ad"
+      - name: "source_snmp"
+  features:
+    enable_feature_x: true
+    enable_feature_y: false
+  schedules:
+    daily_backup:
+      time: "02:00"
+      enabled: true
+    weekly_report:
+      day: "Sunday"
+      time: "03:00"
+      enabled: true
+  collectors:
+    arp:
+      enabled: false
+    dhcp_logs:
+      enabled: false
+    dns_ad:
+      enabled: true
+    esxi:
+      enabled: false
+    fs_network:
+      enabled: false
+    hyperv:
+      enabled: false
+    kvm:
+      enabled: false
+    nmap:
+      enabled: false
+    opennms:
+      enabled: true
+      config_file: "resources/etc/collectors/opennms.yaml"
+    proxmox:
+      enabled: false
+    snmp:
+      enabled: true
+    unifi_controller_api:
+      enabled: false
+    unifi_network_api:
+      enabled: false
+    vcenter:
+      enabled: false
+    xcpng:
+      enabled: false

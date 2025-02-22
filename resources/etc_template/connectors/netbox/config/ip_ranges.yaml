@@ -1,0 +1,12 @@
+ip_ranges:
+  ipv4_ranges:
+    - core_subnet: 
+      start_address: 127.0.0.1
+      end_address: 127.0.0.1
+      status: active
+      description: "Core network subnet"
+      tags: 
+        - core
+      tenant: "Tenant A"
+      group: "Group A"
+        

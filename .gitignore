@@ -1,0 +1,88 @@
+######################
+## Project Specific ##
+######################
+
+# Allow empty folders
+!.gitignore
+
+# Binaries
+bin/browser
+venv
+
+# Config files
+etc/config.yaml
+etc/logging.conf
+etc/server_service_inventory.yaml
+etc/servers.yaml
+etc/service_manager.yaml
+
+# Database
+*.db
+oni_sources.db
+
+# Python
+Pipfile.lock
+
+# Secrets
+secrets.csv
+credentials.*
+secrets.yaml
+
+# Temporary files
+*.tmp
+
+
+##################
+## Boiler Plate ##
+##################
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Rope
+.ropeproject
+
+# Django stuff:
+*.log
+*.pot
+
+# Sphinx documentation
+docs/_build/

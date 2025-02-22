@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+autopep8 = "*"
+black = "==24.4.2"
+dnspython = "==2.7.0"
+hvac = "==2.3.0"
+netmiko = "==4.4.0"
+orjson = "==3.10.6"
+pandas = "==2.2.2"
+paramiko = "==3.5.0"
+puresnmp = "==2.0.1"
+pytest = "==8.2.2"
+pytest-mock = "==3.8.0"
+python-nmap = "== 0.7.1"
+tqdm = "==4.62.3"
+pydantic = "==2.10.5"
+pywinrm = "==0.5.0"
+
+[requires]
+python_version = "3.10"
